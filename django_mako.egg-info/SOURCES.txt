@@ -1,0 +1,10 @@
+setup.py
+django_mako.egg-info/PKG-INFO
+django_mako.egg-info/SOURCES.txt
+django_mako.egg-info/dependency_links.txt
+django_mako.egg-info/requires.txt
+django_mako.egg-info/top_level.txt
+djangomako/__init__.py
+djangomako/middleware.py
+djangomako/shortcuts.py
+djangomako/template.py

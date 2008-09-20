@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: django-mako
+Version: 0.1.0pre
+Summary: Django Mako
+Home-page: http://code.google.com/p/django-mako/
+Author: Mikeal Rogers
+Author-email: mikeal.rogers@gmail.com
+License: Apache 2.0
+Description: This module provides a drop in replacement of django templates for mako templates.
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
