@@ -16,15 +16,14 @@ from django.http import HttpResponse
 
 import middleware
 
-def render_to_string(template_name, **dictionary):
+def render_to_string(template_name, data_dictionary):
     template = middleware.lookup.get_template(template_name)
-    result = template.render(**dictionary)
+    result = template.render(**data_dictionary)
     return result
 
-def render_to_response(*args, **kwargs):
+def render_to_response(template_name, data_dictionary, **kwargs):
     """
     Returns a HttpResponse whose content is filled with the result of calling
     lookup.get_template(args[0]).render with the passed arguments.
     """
-    httpresponse_kwargs = {'mimetype': kwargs.pop('mimetype', None)}
-    return HttpResponse(render_to_string(*args, **kwargs), **httpresponse_kwargs)
+    return HttpResponse(render_to_string(template_name, data_dictionary), **kwargs)
