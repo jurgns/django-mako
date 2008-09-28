@@ -32,6 +32,6 @@ class MakoMiddleware(object):
                                 output_encoding=output_encoding, 
                                 encoding_errors=encoding_errors,
                                 )
-        import django_mako
-        django_mako.lookup = lookup
+        import djangomako
+        djangomako.lookup = lookup
     
