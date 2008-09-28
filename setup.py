@@ -16,7 +16,7 @@ from setuptools import setup, find_packages
 import os, sys
 
 PACKAGE_NAME = "django-mako"
-PACKAGE_VERSION = "0.1.0"
+PACKAGE_VERSION = "0.2.0pre"
 
 SUMMARY = 'Django Mako'
 
