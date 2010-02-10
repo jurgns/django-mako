@@ -29,7 +29,7 @@ def render_to_string(template_name, dictionary, context_instance=None):
     template = middleware.lookup.get_template(template_name)
     return template.render(**data_dictionary)
 
-def render_to_response(template_name, dictionary, **kwargs):
+def render_to_response(template_name, dictionary, context_instance=None, **kwargs):
     """
     Returns a HttpResponse whose content is filled with the result of calling
     lookup.get_template(args[0]).render with the passed arguments.
