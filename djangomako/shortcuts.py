@@ -27,7 +27,7 @@ def render_to_string(template_name, dictionary, context_instance=None):
         context_dictionary.update(d)
     # fetch and render template
     template = middleware.lookup.get_template(template_name)
-    return template.render(**data_dictionary)
+    return template.render(**dictionary)
 
 def render_to_response(template_name, dictionary, context_instance=None, **kwargs):
     """
